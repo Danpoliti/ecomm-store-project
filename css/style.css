@@ -1,1 +1,340 @@
-/* Note there a few "reset" styles given in reset.css. Review those before you begin */
+:root {
+    --purplefoot: purple;
+}
+
+body {
+    margin: 15px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    grid-area: logo;
+    background-image: linear-gradient(45deg, purple, red, tomato, tomato, red, purple);
+    color: gold;
+    font-family: 'Stalinist One', cursive;
+    font-weight: 400;
+    font-size: 3em;
+    font-family: 'Stalinist One', Impact, sans-serif;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0.16rem 0.16rem brown, 0.32rem 0.32rem red, 0.34rem 0.34rem orange, 0.36rem 0.36rem salmon;
+    box-shadow: 0rem 0.16rem orange;
+    height: 4em;
+}
+
+.page-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo logo logo";
+     /* "navigation navigation navigation"; */
+    min-width: 425px;
+}
+
+.navigation {
+    background-color: purple;
+    grid-area: navigation;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    justify-content: center;
+    list-style-type: none;
+    line-height: 1.9rem;
+    /* padding: 1em; */
+    min-width: 425px;
+}
+.navigation li:hover {
+    background-color: #9141c0;
+    background-image: linear-gradient(#8309ca, #9141c0, #4f0879);
+    color: #ffe815;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu li {
+    padding: 1em 0em 1em 0em;
+    width: 100%;
+}
+
+.navigation a {
+    list-style: none;
+    text-decoration: none;
+    color: gold;
+}
+a {
+    color: purple;
+    font-weight: bolder;
+}
+
+.nav-toggle {
+    z-index: 0;
+    position: absolute;
+    color: red;
+}
+
+
+.menu li {
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: goldenrod;
+}
+
+.search-box {
+    padding: 0.5em 0.5em;
+}
+
+.search label {
+    display: none;
+}
+
+#search {
+    color: rgb(92, 1, 128);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#rating.filter-list {
+    min-width: 130px;
+}
+
+.filter-options {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.material-icons {
+    color: orangered;
+}
+
+.filter-list .material-icons {
+    color: inherit
+}
+
+fieldset {
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-color: rgb(240, 171, 240);
+    color: rgb(155, 44, 155);
+    border-style: solid;
+    border-width: 0.3em;
+    border-radius: 1em;
+    background-color: rgb(253, 238, 253);
+    padding: 0.5em;
+}
+
+input[type=radio]+label {
+    color: orangered;
+    cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+    color: gold;
+    cursor: default;
+}
+
+.show-filter {
+    color: white;
+    /* margin: 0.5em; */
+    /* background-color: indigo; */
+    height: 100%;
+    padding: 1em;
+}
+
+.results {
+    text-align: center;
+    color: purple;
+    background-color: lavender;
+}
+
+.product-img {
+    grid-area: product-img;
+    border-radius: 0.5em;
+    box-shadow: indigo 1px 1px 4px;
+    width: 100%;
+    /* height: 90%; */
+    align-self: center;
+}
+
+.product-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+     "product-price product-price"
+      "details details"
+       "product-filter product-rating" 
+       "add-cart add-cart";
+    background-color: rgb(194, 194, 255);
+    /* margin-top: 1em; */
+    margin-bottom: 1em;
+}
+
+.product-price {
+    grid-area: product-price;
+    margin: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.product-header p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+   
+}
+ins {
+    color: red;
+    font-size: 1.5em;
+}
+
+.details {
+    grid-area: details;
+    margin: 1em;
+    max-width: 80%;
+    text-align: left;
+}
+
+.product-filter {
+    grid-area: product-filter;
+    display: flex;
+    margin: 1em;
+    margin-top: 0;
+    text-align: left;
+}
+
+.product-rating {
+    grid-area: product-rating;
+    width: auto;
+    height: 85%;
+    margin-right: 1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-areas: "product-img thumb-img"
+     "product-img thumb2-img" 
+     "product-img thumb3-img";
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    grid-gap: 1em;
+}
+
+.add-cart {
+    grid-area: add-cart;
+    display: flex;
+    justify-content:flex-end
+    
+     
+}
+.add-cart button {
+  background-color: purple; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  line-height: 1.5em;
+ 
+  text-decoration: none;
+  /* margin-bottom: 1em; */
+  /* display: inline-block; */
+  font-size: 16px;
+}
+button.product-favorite {
+    background: rgb(202, 83, 238);
+}
+.add-cart span.material-icons {
+    color: gold;
+}
+.thumb-img {
+    grid-area: thumb-img;
+    border-radius: 0.5em;
+    box-shadow: indigo 1px 1px 4px;
+}
+.thumb-img:hover {
+    grid-area: thumb-img;
+    border-radius: 0.5em;
+    box-shadow: indigo 1px 1px 4px;
+    mix-blend-mode: lighten;
+}
+
+.thumb2-img {
+    grid-area: thumb2-img;
+    border-radius: 0.5em;
+    box-shadow: indigo 1px 1px 4px;
+}
+
+.thumb3-img {
+    grid-area: thumb3-img;
+    border-radius: 0.5em;
+    box-shadow: indigo 1px 1px 4px;
+}
+
+h3 {
+    background-color: purple;
+    text-shadow: rgb(97, 96, 96) 2px 2px;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 1em;
+}
+
+h2 {
+    /* background-color:purple; */
+    text-shadow: rgb(97, 96, 96) 1px 1px;
+    color: purple;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1em;
+    flex-wrap: wrap;
+    background-color: var(--purplefoot);
+    color: var(--white);
+}
+
+.social {
+    display: flow-root;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.copyright {
+    color: white;
+}
