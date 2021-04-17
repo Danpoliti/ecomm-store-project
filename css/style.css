@@ -1,9 +1,10 @@
 :root {
     --purplefoot: purple;
+    --white: #fff;
 }
 
 body {
-    margin: 15px;
+    margin: auto;
 }
 
 main {
@@ -30,26 +31,26 @@ main {
 
 .page-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:auto 1fr auto;
     grid-template-areas: 
     "logo logo logo";
      /* "navigation navigation navigation"; */
-    min-width: 425px;
+    /* min-width: 425px; */
 }
 
 .navigation {
-    background-color: purple;
+    background-color: var(--purplefoot);
     grid-area: navigation;
     display: flex;
     flex-direction: row;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 0.7rem;
     justify-content: center;
     list-style-type: none;
     line-height: 1.9rem;
     /* padding: 1em; */
-    min-width: 425px;
+    /* min-width: 425px; */
 }
 .navigation li:hover {
     background-color: #9141c0;
@@ -75,7 +76,7 @@ main {
     color: gold;
 }
 a {
-    color: purple;
+    color:var(--purplefoot);
     font-weight: bolder;
 }
 
@@ -107,7 +108,7 @@ a {
 }
 
 #search {
-    color: rgb(92, 1, 128);
+    color:var(--purplefoot);
     font-size: 2em;
     font-weight: bold;
 }
@@ -141,9 +142,9 @@ fieldset {
     width: 100%;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     border-color: rgb(240, 171, 240);
-    color: rgb(155, 44, 155);
+    color:var(--purplefoot);
     border-style: solid;
     border-width: 0.3em;
     border-radius: 1em;
@@ -171,14 +172,14 @@ input[type=radio]:checked+label {
 
 .results {
     text-align: center;
-    color: purple;
+    color: var(--purplefoot);
     background-color: lavender;
 }
 
 .product-img {
     grid-area: product-img;
     border-radius: 0.5em;
-    box-shadow: indigo 1px 1px 4px;
+    box-shadow: var(--purplefoot) 1px 1px 4px;
     width: 100%;
     /* height: 90%; */
     align-self: center;
@@ -257,7 +258,7 @@ ins {
      
 }
 .add-cart button {
-  background-color: purple; /* Green */
+  background-color: var(--purplefoot); /* Green */
   border: none;
   color: white;
   padding: 15px 15px;
@@ -278,29 +279,29 @@ button.product-favorite {
 .thumb-img {
     grid-area: thumb-img;
     border-radius: 0.5em;
-    box-shadow: indigo 1px 1px 4px;
+    box-shadow: var(--purplefoot) 1px 1px 4px;
 }
 .thumb-img:hover {
     grid-area: thumb-img;
     border-radius: 0.5em;
-    box-shadow: indigo 1px 1px 4px;
+    box-shadow: var(--purplefoot) 1px 1px 4px;
     mix-blend-mode: lighten;
 }
 
 .thumb2-img {
     grid-area: thumb2-img;
     border-radius: 0.5em;
-    box-shadow: indigo 1px 1px 4px;
+    box-shadow: var(--purplefoot) 1px 1px 4px;
 }
 
 .thumb3-img {
     grid-area: thumb3-img;
     border-radius: 0.5em;
-    box-shadow: indigo 1px 1px 4px;
+    box-shadow: var(--purplefoot) 1px 1px 4px;
 }
 
 h3 {
-    background-color: purple;
+    background-color:var(--purplefoot);
     text-shadow: rgb(97, 96, 96) 2px 2px;
     color: white;
     margin-top: 1em;
@@ -311,12 +312,40 @@ h3 {
 h2 {
     /* background-color:purple; */
     text-shadow: rgb(97, 96, 96) 1px 1px;
-    color: purple;
+    color: var(--purplefoot);
     margin-top: 0;
     margin-bottom: 0;
     padding: 0.5em;
     text-align: left;
 }
+.pagination p {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: var(--purplefoot);
+}
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.pages a{
+    display: flex;
+    text-decoration: none;
+    padding: 15px;
+}
+.pages a:hover {
+    background-color: var(--purplefoot);
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    line-height: 0.5em;
+}
+
 
 .page-footer {
     display: flex;
@@ -328,7 +357,10 @@ h2 {
     background-color: var(--purplefoot);
     color: var(--white);
 }
-
+.page-footer a {
+    color: var(--white);
+    text-decoration: none;
+}
 .social {
     display: flow-root;
     justify-content: flex-end;
