@@ -28,7 +28,9 @@ main {
     box-shadow: 0rem 0.16rem orange;
     height: 4em;
 }
-
+.logo img {
+    width: 60%;
+}
 .page-header {
     display: grid;
     grid-template-columns:auto 1fr auto;
@@ -163,15 +165,17 @@ input[type=radio]:checked+label {
 }
 
 .show-filter {
-    color: white;
-    /* margin: 0.5em; */
-    /* background-color: indigo; */
+    color: var(--purplefoot);
     height: 100%;
     padding: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
 }
 
 .results {
-    text-align: center;
+    text-align: left;
     color: var(--purplefoot);
     background-color: lavender;
 }
@@ -235,8 +239,7 @@ ins {
     grid-area: product-rating;
     width: auto;
     height: 85%;
-    margin-right: 1em;
-}
+    text-align: center;}
 
 .product-grid {
     display: grid;
