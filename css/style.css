@@ -226,8 +226,8 @@ ins {
 .product-filter {
     grid-area: product-filter;
     display: flex;
-    margin: 1em;
-    margin-top: 0;
+    /* margin: 0.5em; */
+    margin-bottom: 1em;
     text-align: left;
 }
 
@@ -304,6 +304,7 @@ h3 {
     background-color:var(--purplefoot);
     text-shadow: rgb(97, 96, 96) 2px 2px;
     color: white;
+    font-size: 1em;
     margin-top: 1em;
     margin-bottom: 0;
     padding: 1em;
