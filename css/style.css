@@ -156,7 +156,23 @@ input[type=radio]:checked+label {
     background-image: linear-gradient(#8309ca, #9141c0, #4f0879);
     color: var(--menu-font-color);
 }
+.your-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 0.5em;
 
+}
+.your-products li {
+    padding: 0.5em;
+}
+.your-products li:hover {
+    background: var(--menu-bg-color2);
+}
+.your-products span {
+    color: var(--iconsgold);
+}
 .menu {
     display: flex;
     justify-content: space-between;
@@ -573,6 +589,9 @@ button.product-favorite {
 @media screen and (min-width: 82em){
 .navigation{
     font-size: var(--font-lg-view);
+}
+.your-products span {
+    font-size: 1.5em;
 }
 .nav-toggle {
     display: none;
