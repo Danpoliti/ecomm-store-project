@@ -30,4 +30,4 @@ const setThumb = function (event) {
     bigImage.setAttribute(`alt`, imgAlt)
    }
 }
-theGallery.addEventListener(`click`, setThumb)
+theGallery.addEventListener(`mouseover`, setThumb)
