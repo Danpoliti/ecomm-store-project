@@ -17,6 +17,11 @@ Read and complete the steps in the following two documents:
 - Both urls (code, and live) will be collected prior to the first deliverable being due
 - See the [project overview](https://www.notion.so/juneate/Project-Webstore-28443f753b344d60b0176a24e14f17c9) for details on submissions, as well as a form
 
+## Screenshots tests
+
+All the screenshot tests are included in the doc folder
+
+
 
 ## SHOW SELECTOR
  I tried to make the show selector box works, but I couldnt realized why was not working. The code is down below and also commented in the javascript file.
