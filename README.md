@@ -18,5 +18,43 @@ Read and complete the steps in the following two documents:
 - See the [project overview](https://www.notion.so/juneate/Project-Webstore-28443f753b344d60b0176a24e14f17c9) for details on submissions, as well as a form
 
 
+## SHOW SELECTOR
+ I tried to make the show selector box works, but I couldnt realized why was not working. The code is down below and also commented in the javascript file.
+
+ <!-- /* productsList.innerHTML = `<h2 class="subheading">Results</h2>
+                        <section class="show-filter">
+                        <h4>Show</h4>
+                        <label for="sort">Show</label>
+                        <select name="sort" id="sort" onchange="displayProducts()">
+                            <option value="price-high">Price, highest to lowest</option>
+                            <option value="price-low">Price, lowest to highest</option>
+                            <option value="newest">Newest releases</option>
+                        </select>
+                        </section>`
+
+
+       
+
+       
+       productsData.sort(function(a, b){
+           
+            if(sortValue == 'price-high')
+            {
+                if(parseInt(a.price) > parseInt(b.price))
+                    return 1
+                if(parseInt(b.price) < parseInt(a.price))
+                    return -1
+                return 0
+            }else if(sortValue == 'price-low')
+            {
+                if(parseInt(a.price) < parseInt(b.price))
+                    return 1
+                if(parseInt(b.price) > parseInt(a.price))
+                    return -1
+                return 0
+            }
+            return 0
+        })
+*/ -->
 
 
