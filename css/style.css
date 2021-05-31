@@ -235,7 +235,6 @@ input[type=radio]:checked+label {
     flex-direction: column;
     background-color: var(--menu-bg-color2);
     background-image: none;
-    display: flex;
     padding: 0;
     position: absolute;
     width: 100%;
@@ -244,7 +243,7 @@ input[type=radio]:checked+label {
 .submenu {
     display: none;
     position: relative;
-    top: -0.040em;
+    top: -0.080em;
     right: -13.9em;
 }
 
@@ -371,7 +370,6 @@ button#search-button {
     border-radius: 10px;
     opacity: 50%;
 }
-
 
 .colorpicked-filter input {
     appearance: none;
@@ -758,8 +756,14 @@ button.product-favorite:hover {
 
 @media screen and (min-width:48em) {
     fieldset {
+        font-size: var(--font-md-view);
+    }
+    .handed-filter input+span {
         font-size: var(--font-lg-view);
     }
+.colorpicked-filter input+span {
+    font-size: var(--font-lg-view);
+}
     .navigation {
         background-color: var(--menu-bg-color1);
         display: flex;
@@ -807,6 +811,7 @@ button.product-favorite:hover {
         background-color: var(--menu-bg-color2);
         background-image: none;
         display: flex;
+        flex-direction: row;
         padding: 0;
         position: absolute;
         width: 100%;
@@ -814,11 +819,11 @@ button.product-favorite:hover {
     
     .submenu {
         display: none;
+        top: initial;
+        right: initial;
     }
     
-    /* .hidden {
-        display: none;
-    } */
+
 
     .nav-toggle {
         display: none;
@@ -891,8 +896,14 @@ button.product-favorite:hover {
 
 @media screen and (min-width: 82em) {
     fieldset {
+        font-size: var(--font-md-view);
+    }
+    .handed-filter input+span {
         font-size: var(--font-xl-view);
     }
+.colorpicked-filter input+span {
+    font-size: var(--font-xl-view);
+}
     h2 {
         font-size: 3em;
     }
