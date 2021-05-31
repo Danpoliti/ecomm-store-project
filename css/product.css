@@ -1,38 +1,12 @@
 
-/* Color & Font variables */
-/* Fira Sans Regular 400 */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-/* Fira Sans Regular 700 */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
-html{
-    box-sizing: border-box;
-    /* Colors */
-    --font-color1: purple;
-    --font-color2: white;
-    --iconsdefault: orangered;
-    --iconsgold: gold;
-    --menu-bg-color1:purple;
-    --menu-bg-color2:#4f0879;
-    --menu-font-color: gold;
-    --primary-color: purple;
-    --primary-color-hover: rgb(175, 2, 175);
-    --secondary-color:#4f0879;
-    --secondary-color-hover:#7d0cbe;
-    --purplefoot: purple;
-    --salesprice:red;
-    --search-bg:goldenrod;
-
-    /* Fonts */
---font-fira: 'Fira Sans', Arial, Helvetica, sans-serif;
-/* Font size */
---font-sm-view: 0.7em;
---font-md-view: 1em;
---font-lg-view: 1.2em;
---font-xl-view: 1.6em;
-}
-
 /* Product Grid structure */
-
+main {
+    max-width: 1200px;
+}
+.product-grid {
+margin: auto;
+max-width: 800px;
+}
 
 .product-price {
     font-family: var(--font-fira);
