@@ -202,3 +202,8 @@ document.querySelector(`#right-handed`).addEventListener(`click`, displayProduct
 document.querySelector(`#left-handed`).addEventListener(`click`, displayProducts)
 
 
+const navToggle = function() {
+    document.querySelector(`.navigation`).classList.toggle(`hidden`)
+}
+
+document.querySelector(`.nav-toggle`).addEventListener(`click`,navToggle)
