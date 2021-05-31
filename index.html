@@ -15,7 +15,7 @@
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="logo"><img src="img/guitarwhite.svg" alt="Logo Music Store" >
+    <a href="index.html" class="logo"><img src="img/guitarwhite.svg" alt="Logo Music Store">
     </a>
 
     <!-- Navigation menu and toggle button (non-functional) -->
@@ -30,7 +30,7 @@
     <!-- Additional links -->
 
   </header>
-  <nav  class="navigation">
+  <nav class="navigation">
     <ul class="menu">
       <li><a href="#">Products</a>
         <ul class="submenu">
@@ -43,9 +43,9 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
-        <ul class="your-products">
-      <li><a href="#"><span class="material-icons" >favorite_border</span></a></li>
-      <li><a href="#"><span class="material-icons" >shopping_cart</span></a></li>
+    <ul class="your-products">
+      <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
+      <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
     </ul>
   </nav>
   <form class="search">
@@ -65,26 +65,41 @@
 
 
       <div class="filter-options">
-        <fieldset>
+        <fieldset class="top-filter">
           <legend>Colour</legend>
           <ul class="filter-list" id="filter-colour">
-            <li><input type="checkbox" name="colour" value="black" id="filter-black" class="checkbox"> <label for="filter-black"><span></span> Black</label>
+            <label for="filter-black" class="colorpicked-filter">
+              <li><input type="checkbox" name="colour" value="black" id="filter-black" class="checkbox">
+                <span>Black</span>
+            </label>
             </li>
-            <li><input type="checkbox" name="colour" value="white" id="filter-white" class="checkbox"> <label for="filter-white" ><span></span> White</label>
+            <label for="filter-white" class="colorpicked-filter">
+              <li><input type="checkbox" name="colour" value="white" id="filter-white" class="checkbox">
+                <span>White</span>
+            </label>
             </li>
-            <li><input type="checkbox" name="colour" value="red" id="filter-red" class="checkbox"> <label for="filter-red" ><span></span> Red</label></li>
+            <label for="filter-red" class="colorpicked-filter">
+              <li><input type="checkbox" name="colour" value="red" id="filter-red" class="checkbox"> <span>Red</span>
+            </label>
+            </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="top-filter">
           <legend>Type</legend>
           <ol class="filter-list">
-            <li><input type="checkbox" name="size" value="RH" id="right-handed" class="checkbox"><label
-                for="right-handed">Right-handed</label> </li>
-            <li><input type="checkbox" name="size" value="LH" id="left-handed" class="checkbox"><label
-                for="left-handed">Left-handed</label> </li>
+            <label for="right-handed" class="handed-filter">
+              <li><input type="checkbox" name="size" value="RH" id="right-handed"
+                  class="checkbox"><span>Right-handed</span>
+            </label> </li>
+
+            <label for="left-handed" class="handed-filter">
+              <li><input type="checkbox" name="size" value="LH" id="left-handed"
+                  class="checkbox"><span>Left-handed</span>
+            </label> </li>
+
           </ol>
         </fieldset>
-        <fieldset>
+        <fieldset class="top-filter" id="star-filter">
           <legend>Ratings (above)</legend>
           <ol class="filter-list" id="rating">
             <li>
@@ -126,14 +141,14 @@
       </div>
 
     </form>
-    
+
     <section class="results">
-     
-      </section>
-      
+
+    </section>
 
 
-  
+
+
     <script src="js/index.js"></script>
     <nav aria-label="Pagination" class="pagination">
       <p>1-6 of 23 products found</p>
@@ -162,7 +177,7 @@
     </nav>
     <p class="copyright">&copy; Copyright, 2021.<img src="img/guitarwhite.svg" alt="" class="foot-image"></p>
   </footer>
-  
+
 </body>
 
 </html>
