@@ -14,3 +14,10 @@ const setThumb = function (event) {
    }
 }
 theGallery.addEventListener(`mouseover`, setThumb)
+
+
+const navToggle = function() {
+    document.querySelector(`.navigation`).classList.toggle(`hidden`)
+}
+
+document.querySelector(`.nav-toggle`).addEventListener(`click`,navToggle)
